@@ -2,26 +2,27 @@ import inquirer
 from colorama import Fore, Style
 import crearmodelo
 import borrarmodelo
+import extraer
+import carga
+import menuconsulta
 
 
 def borrar_modelo():
     borrarmodelo.borrar_modelo()
-    print("Se ha borrado el modelo")
 
 
 def crear_modelo():
     crearmodelo.crear_modeloDB()
-    print("Se ha creado el modelo")
 
 def extraer_informacion():
-    ruta_archivos = input("Ingrese la ruta de los archivos de carga: ")
-    print(f"Se ha extraído la información de la ruta: {ruta_archivos}")
+    extraer.extraer_informacion()
+    
 
 def cargar_informacion():
-    print("Se ha cargado la información al modelo")
+    carga.cargar_informacion()
 
 def realizar_consultas():
-    print("Se han realizado las consultas y se han guardado los resultados en un archivo de texto")
+    menuconsulta.menu_consulta()
 
 def salir():
     print("Saliendo del programa")

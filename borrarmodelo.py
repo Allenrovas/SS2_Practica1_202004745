@@ -28,7 +28,6 @@ def borrar_modelo():
     query2 = """
     DROP TABLE IF EXISTS Country;
     DROP TABLE IF EXISTS Tiempo;
-    DROP TABLE IF EXISTS Totales;
     DROP TABLE IF EXISTS MaxWaterHeight;
     DROP TABLE IF EXISTS TsunamiEventValidity;
     DROP TABLE IF EXISTS Tsunami;
